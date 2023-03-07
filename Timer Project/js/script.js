@@ -2,7 +2,6 @@ const days=document.querySelector("#days");
 const hours=document.querySelector("#hours");
 const minutes=document.querySelector("#minutes");
 const seconds=document.querySelector("#seconds");
-// const mseconds=document.querySelector("#mseconds");
 
 const currentYear=new Date().getFullYear();
 const newYear=new Date(`January 1 ${currentYear+1} 00:00:00`);
@@ -20,6 +19,5 @@ function UpdateTime(){
   hours.innerHTML=h<10?"0"+h:h;
   minutes.innerHTML=m<10?"0"+m:m;
   seconds.innerHTML=s<10?"0"+s:s;
-  // mseconds.innerHTML=ms<10?"0"+ms:ms;
 }
 setInterval(UpdateTime,1000);
